@@ -1,6 +1,10 @@
 import { useState } from 'react'
 const StatisticLine = (props) => {
-  return (
+  if (props.text === "positive") {
+    return (
+      <p>{props.text} {props.value} %</p>
+    )
+  } return (
     <p>{props.text} {props.value}</p>
   )
 }
